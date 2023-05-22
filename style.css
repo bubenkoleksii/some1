@@ -1,0 +1,198 @@
+:root{
+    --color-text: #5f5f5f;
+    --color-li: #ffffff;
+    --color-li-hover: #9ad7ff;
+
+    --color-btn-primary: #2a704f;
+    --color-btn-primary-border: #17402d;
+}
+
+/*=============================================
+BASE
+==============================================*/
+
+body{
+    font-family: "Segoe UI";
+    font-size: 16px;
+    color: var(--color-text);
+
+    list-style-image: url("img/ul.png");
+}
+
+h1 {
+    font-size: 60px;
+    font-family: "Segoe UI Semibold";
+}
+
+h2 {
+    font-size: 42px;
+    font-family: "Segoe UI Light";
+
+}
+
+h3 {
+    font-family: "Segoe UI";
+    font-size: 40px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+
+/*=============================================
+OVERRIDEN ELEMENTS
+==============================================*/
+
+.btn-primary{
+    border-radius: 0;
+    color: white;
+    border: 2px solid var(--color-btn-primary-border);
+    background-color: var(--color-btn-primary);
+    padding: 0.375rem 0.9rem;
+    font-size: 18px;
+}
+.btn-primary:visited,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:active,
+.btn-primary:target{
+    background: var(--color-btn-primary);
+    border-color: var(--color-btn-primary-border);
+    box-shadow: none;
+}
+
+
+nav li a, nav li a:visited {
+    color: var(--color-li) !important;
+    text-decoration: none;
+}
+
+nav li a:hover, nav li a:active {
+    color: var(--color-li-hover) !important;
+}
+
+nav li.active a {
+    color: var(--color-li-hover) !important;
+}
+nav .li-disabled{
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+
+.card{
+    border: none;
+}
+
+.card-title{
+    font-size: 22px;
+}
+
+
+.card-image{
+    width: 120px;
+}
+
+.decoration-none li a{
+    text-decoration: none;
+}
+
+.grayscale { filter: grayscale(100%); }
+/*=============================================
+CUSTOM STYLES
+==============================================*/
+
+.wrapper{background: url('img/bkg-top.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg {
+    /* The image used */
+    /* Full height */
+    height: 100%;
+    width: max-content;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.center-block-h {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center-block-v {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.cup-shadow{
+    -webkit-box-shadow: 0px 7px 33px -5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 7px 33px -5px rgba(0,0,0,0.6);
+    box-shadow: 0px 7px 33px -5px rgba(0,0,0,0.6);
+}
+
+
+.button-black{
+    background-color: #404040;
+    border: none;
+    color: white;
+    padding: 2px 10px 2px 10px;
+}
+.button-black:disabled{
+    background-color: #6e6e6e;
+
+}
+.text-white{
+    color: white;
+}
+
+.ul-big li{
+    font-size: 20px;
+    margin: 20px;
+}
+
+/*=============================================
+OTHERS
+==============================================*/
+
+.white{
+    color: white;
+}
+
+.f-20{
+    font-size: 20px;
+}
+
+.opacity-6{
+    opacity: 0.6;
+}
+.opacity-4{
+    opacity: 0.4;
+}
+.pros li{
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+
+.parent-header{
+    position: relative;
+}
+.child-header{
+    position: absolute;
+    transform: translateY(50%);
+}
